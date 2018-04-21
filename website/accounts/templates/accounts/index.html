@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block head %}
+	<title>INPUT PIN CODE</title>
+{% endblock %}
+
+{% block body %}
+<center>
+     <form method="POST" action="/account/temperature">
+		 {% csrf_token %}
+		 <h1>Enter Zip Code (INDIA):</h1> <input type="text" name="zip">
+     	<input type="submit">
+     </form>
+</center>
+{% endblock %}

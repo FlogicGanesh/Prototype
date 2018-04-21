@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+    {% block head %}
+    <title>Results</title>
+    {% endblock %}
+{% block body %}
+<style>
+    #s1
+    { float: left;
+      margin: 130px;
+      height: 100%;
+      }
+</style>
+
+
+<div id="s1"><a href="/account/"><p style="color:black; font-size: 20px">New Input</p></a>
+    <a href="javascript:history.go(-1)"><p style="color:black; font-size: 20px">Update Input</p></a>
+    <a href="weather"><p style="color:green; font-size: 20px">Weather</p></a></div>
+<center>
+<div class="container">
+<h2>Results</h2>
+    <h4>Your Inputs are(Filtered):</h4>
+
+{% for n in list1 %}
+
+                        <tr>
+                            <td><b>{{ n.index }}</b></td>.
+                            <td>{{ n.key }}
+                          <a href="/account/drop/{{n.index}}">
+                            <img src="https://www.atabix.com/static/images/close-icon.svg" style="width:10px;height:10px"/> </a>
+                            </td>
+                        </tr><br>
+
+{% endfor %}
+
+<h3>Sum:{{ sum }}</h3>
+<h3>Average:{{ avg }}</h3>
+    <h3>Product:{{ pro }}</h3>
+    {% if pro is 0 %}
+    <h3>Warning:Input has Zero</h3>
+    {% endif %}
+
+</div>
+</center>
+{% endblock %}

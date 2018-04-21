@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+    {% block head %}
+    <title>Calculation Form</title>
+<script>
+    var x=[];
+    function fun1()
+    {
+    x=document.getElementById("id_tup").value;
+    }
+    function fun2()
+    {
+    document.getElementById("id_tup").value=x;
+    }
+</script>
+    {% endblock %}
+{% block body %}
+<center>
+    {% if t is 1 %}
+<div class="container">
+<h1>Calculation Form</h1>
+<form name="form" action="" method="post" onreset="fun1()">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+    <button type="reset">Clear</button>
+    <button type="button" onclick="fun2()">Restore</button>
+</form>
+</div>
+    {% else %}
+    {% if not user.is_authenticated %}
+
+    <a href="/account/login/"><p style="color:red; font-size: 20px">LogIn</p></a><h3>OR</h3>
+    <a href="/account/register"><p style="color:red; font-size: 20px">Sign Up</p></a><h3>To Continue</h3>
+</center>
+
+    {% else %}
+    <h2>Your Maximum Limit is Reached</h2>
+    <h2>Please..Upgrade Your Account To Continue</h2>
+{% endif %}
+{% endif %}{% endblock %}

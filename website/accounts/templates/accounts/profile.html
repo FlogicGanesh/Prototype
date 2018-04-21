@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+    {% block head %}
+    <title>Profile</title>
+    {% endblock %}
+{% block body %}
+<br><br>
+<div class="container">
+    <h3>
+        <p>Email: {{ user.email }}</p>
+        <p>Usertype: {{ user.usertype }}</p>
+        <p>Total usage: {{ user.userprofile.total_usage }}</p>
+    </h3>
+    <br>
+<a href="/account/profile/edit/"><p style="color:brown; font-size: 20px">Edit Profile</p></a>
+</div>
+{% endblock %}
