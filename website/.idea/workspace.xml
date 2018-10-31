@@ -11,11 +11,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="reg_form.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reg_form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/reg_form.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -38,7 +47,6 @@
         <option value="$PROJECT_DIR$/website/views.py" />
         <option value="$PROJECT_DIR$/accounts/forms.html" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/registered.html" />
-        <option value="$PROJECT_DIR$/accounts/templates/accounts/login.html" />
         <option value="$PROJECT_DIR$/website/urls.py" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/logout.html" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/results.html" />
@@ -57,6 +65,7 @@
         <option value="$PROJECT_DIR$/accounts/views.py" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/CalcView.html" />
         <option value="$PROJECT_DIR$/accounts/templates/accounts/reg_form.html" />
+        <option value="$PROJECT_DIR$/accounts/templates/accounts/login.html" />
       </list>
     </option>
   </component>
@@ -317,13 +326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/edit_profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -428,6 +430,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
